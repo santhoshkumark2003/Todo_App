@@ -14,8 +14,8 @@ Simple Todo application built. Implements CRUD operations for todos.
 
 1. Clone repository
     ```
-    git clone <repo-url>  
-    
+    git clone <repo-url>  https://github.com/santhoshkumark2003/Todo_App
+
     ```
 
 ## Contributing
