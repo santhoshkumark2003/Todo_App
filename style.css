@@ -1,0 +1,196 @@
+* {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  color: rgb(2, 50, 22);
+  margin: 0 50px;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://www.moneypatrol.com/moneytalk/wp-content/uploads/2023/06/budget185.png"); /* path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.main h1 {
+  padding: 0;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(5, 57, 8);
+}
+h3 {
+  color: rgb(5, 52, 18);
+}
+.main {
+  width: 700px;
+  height: 650px;
+  background-color: lightgreen;
+  background-image: radial-gradient(
+    circle at center center,
+    rgb(233, 255, 32),
+    rgb(176, 209, 39),
+    rgb(118, 163, 47),
+    rgb(61, 116, 54),
+    rgb(3, 70, 61)
+  );
+  border-radius: 18px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 0 10px;
+  color: white;
+}
+.cal {
+  display: flex;
+  gap: 10px;
+  /* width: 470px; */
+}
+.form input {
+  width: 450px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.form select {
+  width: 470px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.form button {
+  width: 233px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.add {
+  background-image: radial-gradient(
+    circle at center center,
+    rgb(86, 197, 113),
+    rgb(77, 181, 95),
+    rgb(67, 165, 77),
+    rgb(58, 149, 59),
+    rgb(48, 133, 41)
+  );
+  box-shadow: 0 0 10px rgba(31, 69, 2, 0.5);
+}
+.clear {
+  background-image: radial-gradient(
+    circle at center center,
+    rgb(252, 155, 156),
+    rgb(237, 122, 126),
+    rgb(221, 89, 96),
+    rgb(206, 56, 65),
+    rgb(190, 23, 35)
+  );
+  box-shadow: 0 0 10px rgba(89, 21, 3, 0.5);
+}
+.filter {
+  border: 2px solid deeppink;
+  width: 470px;
+  height: 40px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(196, 164, 201);
+}
+.task {
+  background-color: azure;
+  border-radius: 12px;
+  width: 470px;
+  height: 100px;
+  overflow-y: scroll;
+}
+.task::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+/* media queries */
+
+@media (max-width: 768px) {
+  body {
+    margin: 0 20px;
+    overflow-y: auto;
+  }
+  .main {
+    margin-top: 340px;
+    width: 380px;
+    height: auto;
+    padding: 20px;
+  }
+  .cal {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
+    padding: 15px;
+    justify-content: space-between;
+  }
+  .form input {
+    width: 260px;
+  }
+  .form select {
+    width: 280px;
+  }
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .filter,
+  .task {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+    .main {
+    width: 240px;
+    }
+  .main h1 {
+    font-size: 28px;
+  }
+  .card h2 {
+    font-size: 14px;
+  }
+  .card h3 {
+    font-size: 16px;
+  }
+  .task {
+    height: 150px;
+  }
+  .form button {
+    padding: 8px;
+    font-size: 14px;
+  }
+  .form input,
+  .form select {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
